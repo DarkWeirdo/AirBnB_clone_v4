@@ -23,8 +23,6 @@ $(document).ready(function() {
         .done(function(data) {
             if (data.status === 'OK') {
                 apiStatusDiv.addClass('available');
-            } else {
-                apiStatusDiv.removeClass('available');
             }
         })
         .fail(function() {
